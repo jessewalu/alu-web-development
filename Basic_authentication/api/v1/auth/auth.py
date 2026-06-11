@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Module for the Auth class that serves as the base authentication template."""
+"""Module for Auth class that serves as the base authentication template."""
 from typing import List, TypeVar
 from flask import request
 
