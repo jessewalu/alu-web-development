@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
-"""Module defining index-level routes for API v1."""
+"""Module that defines index-level routes for API v1, including status,
+stats, unauthorized, and forbidden test endpoints."""
 from flask import jsonify, abort
 
 from api.v1.views import app_views
