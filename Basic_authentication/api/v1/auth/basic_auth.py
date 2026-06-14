@@ -12,7 +12,7 @@ class BasicAuth(Auth):
 
     def extract_base64_authorization_header(
             self, authorization_header: str) -> str:
-        """Extract the Base64-encoded credentials from the Authorization header.
+        """Extract Base64-encoded credentials from the Authorization header.
 
         Returns None if the header is missing, not a string, or not Basic auth.
         Otherwise returns the Base64 portion after 'Basic '.
@@ -43,7 +43,7 @@ class BasicAuth(Auth):
 
     def extract_user_credentials(
             self, decoded_base64_authorization_header: str) -> (str, str):
-        """Extract user email and password from a decoded Base64 credential string.
+        """Extract user email, password from decoded Base64 credential string.
 
         Returns (None, None) if the input is invalid or missing a colon.
         Otherwise returns (email, password) split on the first colon.
