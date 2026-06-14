@@ -33,4 +33,3 @@ def unauthorized() -> None:
       - 401 error to trigger the Unauthorized error handler
     """
     abort(401)
-    
