@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Module for the SessionAuth class implementing Session-based authentication."""
+"""Module for SessionAuth class implementing Session-based authentication."""
 import uuid
 
 from api.v1.auth.auth import Auth
@@ -39,9 +39,9 @@ class SessionAuth(Auth):
         return self.user_id_by_session_id.get(session_id)
 
     def current_user(self, request=None):
-        """Return the User instance associated with the request's session cookie.
+        """Return User instance associated with the request's session cookie.
 
-        Uses session_cookie and user_id_for_session_id to determine the User ID,
+        Uses session_cookie and user_id_for_session_id to determine User ID,
         then retrieves the corresponding User instance from the database.
         """
         session_id = self.session_cookie(request)
